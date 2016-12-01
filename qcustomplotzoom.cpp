@@ -53,26 +53,33 @@ void QCustomPlotZoom::setErrorBarsData(const QVector<double> &error_data)
 
 void QCustomPlotZoom::mousePressEvent(QMouseEvent * event)
 {
-    if(zoomMode)
+    switch(event->button())
     {
-        if(event->button() == Qt::LeftButton)
+    case Qt::LeftButton:
+
+        if(zoomMode)
         {
             origin = event->pos();
             rubberBand->setGeometry(QRect(origin, QSize()));
             rubberBand->show();
         }
 
-        if(event->button() == Qt::RightButton)
-        {
+        break;
 
-        }
+    case Qt::RightButton:
 
-        if(event->button() == Qt::MiddleButton)
-        {
-            rescaleAxes();
-            replot();
-        }
+        break;
+
+    case Qt::MiddleButton:
+        rescaleAxes();
+        replot();
+        break;
+
+    default:
+        break;
     }
+
+
     QCustomPlot::mousePressEvent(event);
 }
 
@@ -92,13 +99,26 @@ void QCustomPlotZoom::mouseReleaseEvent(QMouseEvent * event)
         const QRect & zoomRect = rubberBand->geometry();
         int xp1, yp1, xp2, yp2;
         zoomRect.getCoords(&xp1, &yp1, &xp2, &yp2);
-        auto x1 = xAxis->pixelToCoord(xp1);
-        auto x2 = xAxis->pixelToCoord(xp2);
-        auto y1 = yAxis->pixelToCoord(yp1);
-        auto y2 = yAxis->pixelToCoord(yp2);
 
-        xAxis->setRange(x1, x2);
-        yAxis->setRange(y1, y2);
+        // zoom in only if the rect is bigger than 5px x 5px
+        int tol = 5;
+        if(abs(xp2-xp1) > tol && abs(yp2-yp1) > tol)
+        {
+            auto x1 = xAxis->pixelToCoord(xp1);
+            auto x2 = xAxis->pixelToCoord(xp2);
+            auto y1 = yAxis->pixelToCoord(yp1);
+            auto y2 = yAxis->pixelToCoord(yp2);
+
+            if(event->button() == Qt::LeftButton)
+            {
+                xAxis->setRange(x1, x2);
+                yAxis->setRange(y1, y2);
+            }
+            else if(event->button() == Qt::RightButton)
+            {
+
+            }
+        }
 
         rubberBand->hide();
         replot();
@@ -110,9 +130,20 @@ void QCustomPlotZoom::mouseReleaseEvent(QMouseEvent * event)
 
 void QCustomPlotZoom::keyPressEvent(QKeyEvent * event)
 {
-    if(event->key() == Qt::Key_Control)
-    {
+    switch (event->key()) {
+    case Qt::Key_L:
 
+        if(yAxis->scaleType() == QCPAxis::ScaleType::stLinear)
+            yAxis->setScaleType(QCPAxis::ScaleType::stLogarithmic);
+        else
+            yAxis->setScaleType(QCPAxis::ScaleType::stLinear);
+
+        rescaleAxes();
+        replot();
+
+        break;
+    default:
+        break;
     }
 
     QCustomPlot::keyPressEvent(event);
