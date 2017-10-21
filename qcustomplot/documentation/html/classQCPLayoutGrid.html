@@ -47,6 +47,8 @@ Public Types</h2></td></tr>
 <tr class="inherit_header pub_types_classQCPLayoutElement"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classQCPLayoutElement')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classQCPLayoutElement.html">QCPLayoutElement</a></td></tr>
 <tr class="memitem:a0d83360e05735735aaf6d7983c56374d inherit pub_types_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a0d83360e05735735aaf6d7983c56374d">UpdatePhase</a> </td></tr>
 <tr class="separator:a0d83360e05735735aaf6d7983c56374d inherit pub_types_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afb3e5773529e4bd20e448f81be4d2a inherit pub_types_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a> </td></tr>
+<tr class="separator:a0afb3e5773529e4bd20e448f81be4d2a inherit pub_types_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Functions</h2></td></tr>
@@ -104,10 +106,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>wrap</b> () const</td>
 <tr class="separator:a20a745d013de4c89cf5de8004a5a36f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08bba60e4acd20165526a8fd7f986b58"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutGrid.html#a08bba60e4acd20165526a8fd7f986b58">simplify</a> ()</td></tr>
 <tr class="separator:a08bba60e4acd20165526a8fd7f986b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ef4b0d626708a1ada2cfea3a5973b80"><td class="memItemLeft" align="right" valign="top">virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutGrid.html#a9ef4b0d626708a1ada2cfea3a5973b80">minimumSizeHint</a> () const</td></tr>
-<tr class="separator:a9ef4b0d626708a1ada2cfea3a5973b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3720d1b79931b2bdec3f2158a5f0181c"><td class="memItemLeft" align="right" valign="top">virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutGrid.html#a3720d1b79931b2bdec3f2158a5f0181c">maximumSizeHint</a> () const</td></tr>
-<tr class="separator:a3720d1b79931b2bdec3f2158a5f0181c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83ac366358e2576226630de21cd5b332"><td class="memItemLeft" align="right" valign="top">virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutGrid.html#a83ac366358e2576226630de21cd5b332">minimumOuterSizeHint</a> () const</td></tr>
+<tr class="separator:a83ac366358e2576226630de21cd5b332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c2f06a1898b4de6e0237875c62f610"><td class="memItemLeft" align="right" valign="top">virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutGrid.html#ab2c2f06a1898b4de6e0237875c62f610">maximumOuterSizeHint</a> () const</td></tr>
+<tr class="separator:ab2c2f06a1898b4de6e0237875c62f610"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a602b426609b4411cf6a93c3ddf3a381a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQCPLayoutElement.html">QCPLayoutElement</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutGrid.html#a602b426609b4411cf6a93c3ddf3a381a">element</a> (int row, int column) const</td></tr>
 <tr class="separator:a602b426609b4411cf6a93c3ddf3a381a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adff1a2ca691ed83d2d24a4cd1fe17012"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutGrid.html#adff1a2ca691ed83d2d24a4cd1fe17012">addElement</a> (int row, int column, <a class="el" href="classQCPLayoutElement.html">QCPLayoutElement</a> *<a class="el" href="classQCPLayoutGrid.html#a602b426609b4411cf6a93c3ddf3a381a">element</a>)</td></tr>
@@ -144,8 +146,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>wrap</b> () const</td>
 <tr class="separator:a4efdcbde9d28f410e5ef166c9d691deb inherit pub_methods_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a208effccfe2cca4a0eaf9393e60f2dd4 inherit pub_methods_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> () const</td></tr>
 <tr class="separator:a208effccfe2cca4a0eaf9393e60f2dd4 inherit pub_methods_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a32a12a6161c9dffbadeb9cc585510c inherit pub_methods_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top"><a id="a2a32a12a6161c9dffbadeb9cc585510c"></a>
-QRect&#160;</td><td class="memItemRight" valign="bottom"><b>outerRect</b> () const</td></tr>
+<tr class="memitem:a2a32a12a6161c9dffbadeb9cc585510c inherit pub_methods_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a> () const</td></tr>
 <tr class="separator:a2a32a12a6161c9dffbadeb9cc585510c inherit pub_methods_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4ac9450aa2d60863bf3a8ea0c940c9d inherit pub_methods_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top"><a id="af4ac9450aa2d60863bf3a8ea0c940c9d"></a>
 QMargins&#160;</td><td class="memItemRight" valign="bottom"><b>margins</b> () const</td></tr>
@@ -162,6 +163,9 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>minimumSize</b> () c
 <tr class="memitem:afb9503858d4aa0f3b9f1794b084fb40a inherit pub_methods_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top"><a id="afb9503858d4aa0f3b9f1794b084fb40a"></a>
 QSize&#160;</td><td class="memItemRight" valign="bottom"><b>maximumSize</b> () const</td></tr>
 <tr class="separator:afb9503858d4aa0f3b9f1794b084fb40a inherit pub_methods_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66136f121ee3e1c933b748761203cab4 inherit pub_methods_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top"><a id="a66136f121ee3e1c933b748761203cab4"></a>
+<a class="el" href="classQCPLayoutElement.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sizeConstraintRect</b> () const</td></tr>
+<tr class="separator:a66136f121ee3e1c933b748761203cab4 inherit pub_methods_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8af6bcf81e12fe1d6f44490f34522b90 inherit pub_methods_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top"><a id="a8af6bcf81e12fe1d6f44490f34522b90"></a>
 <a class="el" href="classQCPMarginGroup.html">QCPMarginGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>marginGroup</b> (<a class="el" href="namespaceQCP.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a> side) const</td></tr>
 <tr class="separator:a8af6bcf81e12fe1d6f44490f34522b90 inherit pub_methods_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +188,8 @@ QHash&lt; <a class="el" href="namespaceQCP.html#a7e487e3e2ccb62ab7771065bab7cae5
 <tr class="separator:a74eb5280a737ab44833d506db65efd95 inherit pub_methods_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e0e9c48f230217c529b0819f832d84 inherit pub_methods_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a03e0e9c48f230217c529b0819f832d84">setMaximumSize</a> (int width, int height)</td></tr>
 <tr class="separator:a03e0e9c48f230217c529b0819f832d84 inherit pub_methods_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361666cdcc6fbfd37344cc44be746b0f inherit pub_methods_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> (<a class="el" href="classQCPLayoutElement.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a> constraintRect)</td></tr>
+<tr class="separator:a361666cdcc6fbfd37344cc44be746b0f inherit pub_methods_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a516e56f76b6bc100e8e71d329866847d inherit pub_methods_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a516e56f76b6bc100e8e71d329866847d">setMarginGroup</a> (QCP::MarginSides sides, <a class="el" href="classQCPMarginGroup.html">QCPMarginGroup</a> *group)</td></tr>
 <tr class="separator:a516e56f76b6bc100e8e71d329866847d inherit pub_methods_classQCPLayoutElement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b96ae0d7bcfa6e38188fcb1e73e143f inherit pub_methods_classQCPLayoutElement"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a0b96ae0d7bcfa6e38188fcb1e73e143f">selectTest</a> (const QPointF &amp;pos, bool onlySelectable, QVariant *details=0) const</td></tr>
@@ -275,6 +281,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header signals_classQCPLayerable"><td colspan="2" onclick="javascript:toggleInherit('signals_classQCPLayerable')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="classQCPLayerable.html">QCPLayerable</a></td></tr>
 <tr class="memitem:abbf8657cedea73ac1c3499b521c90eba inherit signals_classQCPLayerable"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayerable.html#abbf8657cedea73ac1c3499b521c90eba">layerChanged</a> (<a class="el" href="classQCPLayer.html">QCPLayer</a> *newLayer)</td></tr>
 <tr class="separator:abbf8657cedea73ac1c3499b521c90eba inherit signals_classQCPLayerable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classQCPLayout"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classQCPLayout')"><img src="closed.png" alt="-"/>&#160;Protected Static Functions inherited from <a class="el" href="classQCPLayout.html">QCPLayout</a></td></tr>
+<tr class="memitem:a864fddc84721f186663faf3683f1fa70 inherit pro_static_methods_classQCPLayout"><td class="memItemLeft" align="right" valign="top">static QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayout.html#a864fddc84721f186663faf3683f1fa70">getFinalMinimumOuterSize</a> (const <a class="el" href="classQCPLayoutElement.html">QCPLayoutElement</a> *el)</td></tr>
+<tr class="separator:a864fddc84721f186663faf3683f1fa70 inherit pro_static_methods_classQCPLayout"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add49fd6843821a6126914b837ed52e22 inherit pro_static_methods_classQCPLayout"><td class="memItemLeft" align="right" valign="top">static QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayout.html#add49fd6843821a6126914b837ed52e22">getFinalMaximumOuterSize</a> (const <a class="el" href="classQCPLayoutElement.html">QCPLayoutElement</a> *el)</td></tr>
+<tr class="separator:add49fd6843821a6126914b837ed52e22 inherit pro_static_methods_classQCPLayout"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A layout that arranges child elements in a grid. </p>
@@ -413,7 +424,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the stretch <em>factor</em> of <em>column</em>.</p>
-<p>Stretch factors control the relative sizes of rows and columns. Cells will not be resized beyond their minimum and maximum widths/heights (<a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">QCPLayoutElement::setMinimumSize</a>, <a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">QCPLayoutElement::setMaximumSize</a>), regardless of the stretch factor.</p>
+<p>Stretch factors control the relative sizes of rows and columns. Cells will not be resized beyond their minimum and maximum widths/heights, regardless of the stretch factor. (see <a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">QCPLayoutElement::setMinimumSize</a>, <a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">QCPLayoutElement::setMaximumSize</a>, <a class="el" href="classQCPLayoutElement.html#a361666cdcc6fbfd37344cc44be746b0f">QCPLayoutElement::setSizeConstraintRect</a>.)</p>
 <p>The default stretch factor of newly created rows/columns is 1.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutGrid.html#a6c2591d1a7e2534ce036989543b49e57">setColumnStretchFactors</a>, <a class="el" href="classQCPLayoutGrid.html#a7b0273de5369bd93d942edbaf5b166ec">setRowStretchFactor</a> </dd></dl>
 
@@ -435,7 +446,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the stretch <em>factors</em> of all columns. <em>factors</em> must have the size <a class="el" href="classQCPLayoutGrid.html#a1a2962cbf45011405b64b913afa8e7a2">columnCount</a>.</p>
-<p>Stretch factors control the relative sizes of rows and columns. Cells will not be resized beyond their minimum and maximum widths/heights (<a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">QCPLayoutElement::setMinimumSize</a>, <a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">QCPLayoutElement::setMaximumSize</a>), regardless of the stretch factor.</p>
+<p>Stretch factors control the relative sizes of rows and columns. Cells will not be resized beyond their minimum and maximum widths/heights, regardless of the stretch factor. (see <a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">QCPLayoutElement::setMinimumSize</a>, <a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">QCPLayoutElement::setMaximumSize</a>, <a class="el" href="classQCPLayoutElement.html#a361666cdcc6fbfd37344cc44be746b0f">QCPLayoutElement::setSizeConstraintRect</a>.)</p>
 <p>The default stretch factor of newly created rows/columns is 1.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutGrid.html#ae38f31a71687b9d7ee3104852528fb50">setColumnStretchFactor</a>, <a class="el" href="classQCPLayoutGrid.html#a200b45f9c908f96ebadaa3c8d87a2782">setRowStretchFactors</a> </dd></dl>
 
@@ -467,7 +478,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the stretch <em>factor</em> of <em>row</em>.</p>
-<p>Stretch factors control the relative sizes of rows and columns. Cells will not be resized beyond their minimum and maximum widths/heights (<a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">QCPLayoutElement::setMinimumSize</a>, <a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">QCPLayoutElement::setMaximumSize</a>), regardless of the stretch factor.</p>
+<p>Stretch factors control the relative sizes of rows and columns. Cells will not be resized beyond their minimum and maximum widths/heights, regardless of the stretch factor. (see <a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">QCPLayoutElement::setMinimumSize</a>, <a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">QCPLayoutElement::setMaximumSize</a>, <a class="el" href="classQCPLayoutElement.html#a361666cdcc6fbfd37344cc44be746b0f">QCPLayoutElement::setSizeConstraintRect</a>.)</p>
 <p>The default stretch factor of newly created rows/columns is 1.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutGrid.html#a6c2591d1a7e2534ce036989543b49e57">setColumnStretchFactors</a>, <a class="el" href="classQCPLayoutGrid.html#a7b0273de5369bd93d942edbaf5b166ec">setRowStretchFactor</a> </dd></dl>
 
@@ -489,7 +500,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the stretch <em>factors</em> of all rows. <em>factors</em> must have the size <a class="el" href="classQCPLayoutGrid.html#a19c66fd76cbce58a8e94f33797e0c0aa">rowCount</a>.</p>
-<p>Stretch factors control the relative sizes of rows and columns. Cells will not be resized beyond their minimum and maximum widths/heights (<a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">QCPLayoutElement::setMinimumSize</a>, <a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">QCPLayoutElement::setMaximumSize</a>), regardless of the stretch factor.</p>
+<p>Stretch factors control the relative sizes of rows and columns. Cells will not be resized beyond their minimum and maximum widths/heights, regardless of the stretch factor. (see <a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">QCPLayoutElement::setMinimumSize</a>, <a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">QCPLayoutElement::setMaximumSize</a>, <a class="el" href="classQCPLayoutElement.html#a361666cdcc6fbfd37344cc44be746b0f">QCPLayoutElement::setSizeConstraintRect</a>.)</p>
 <p>The default stretch factor of newly created rows/columns is 1.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutGrid.html#a7b0273de5369bd93d942edbaf5b166ec">setRowStretchFactor</a>, <a class="el" href="classQCPLayoutGrid.html#a6c2591d1a7e2534ce036989543b49e57">setColumnStretchFactors</a> </dd></dl>
 
@@ -585,7 +596,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the filling order and wrapping behaviour that is used when adding new elements with the method <a class="el" href="classQCPLayoutGrid.html#a4c44025dd25acd27e053cadfd448ad7b">addElement(QCPLayoutElement*)</a>.</p>
 <p>The specified <em>order</em> defines whether rows or columns are filled first. Using <a class="el" href="classQCPLayoutGrid.html#ab36af18d77e4428386d02970382ee598">setWrap</a>, you can control at which row/column count wrapping into the next column/row will occur. If you set it to zero, no wrapping will ever occur. Changing the fill order also changes the meaning of the linear index used e.g. in <a class="el" href="classQCPLayoutGrid.html#a97672ecc379cb3a09639926ba9980297">elementAt</a> and <a class="el" href="classQCPLayoutGrid.html#acc1277394ff8a6432e111ff9463e6375">takeAt</a>.</p>
-<p>If you want to have all current elements arranged in the new order, set <em>rearrange</em> to true. The elements will be rearranged in a way that tries to preserve their linear index. However, empty cells are skipped during build-up of the new cell order, which shifts the succeding element's index. The rearranging is performed even if the specified <em>order</em> is already the current fill order. Thus this method can be used to re-wrap the current elements.</p>
+<p>If you want to have all current elements arranged in the new order, set <em>rearrange</em> to true. The elements will be rearranged in a way that tries to preserve their linear index. However, empty cells are skipped during build-up of the new cell order, which shifts the succeeding element's index. The rearranging is performed even if the specified <em>order</em> is already the current fill order. Thus this method can be used to re-wrap the current elements.</p>
 <p>If <em>rearrange</em> is false, the current element arrangement is not changed, which means the linear indexes change (because the linear index is dependent on the fill order).</p>
 <p>Note that the method <a class="el" href="classQCPLayoutGrid.html#adff1a2ca691ed83d2d24a4cd1fe17012">addElement(int row, int column, QCPLayoutElement *element)</a> with explicitly stated row and column is not subject to wrapping and can place elements even beyond the specified wrapping point.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutGrid.html#ab36af18d77e4428386d02970382ee598">setWrap</a>, <a class="el" href="classQCPLayoutGrid.html#a4c44025dd25acd27e053cadfd448ad7b">addElement(QCPLayoutElement*)</a> </dd></dl>
@@ -804,8 +815,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a9ef4b0d626708a1ada2cfea3a5973b80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ef4b0d626708a1ada2cfea3a5973b80">&sect;&nbsp;</a></span>minimumSizeHint()</h2>
+<a id="a83ac366358e2576226630de21cd5b332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83ac366358e2576226630de21cd5b332">&sect;&nbsp;</a></span>minimumOuterSizeHint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -814,7 +825,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QSize QCPLayoutGrid::minimumSizeHint </td>
+          <td class="memname">QSize QCPLayoutGrid::minimumOuterSizeHint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -826,15 +837,17 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the minimum size this layout element (the inner <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a>) may be compressed to.</p>
-<p>if a minimum size (<a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a>) was not set manually, parent layouts consult this function to determine the minimum allowed size of this layout element. (A manual minimum size is considered set if it is non-zero.) </p>
+<p>Returns the suggested minimum size this layout element (the <a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>) may be compressed to, if no manual minimum size is set.</p>
+<p>if a minimum size (<a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a>) was not set manually, parent layouts use the returned size (usually indirectly through <a class="el" href="classQCPLayout.html#a864fddc84721f186663faf3683f1fa70">QCPLayout::getFinalMinimumOuterSize</a>) to determine the minimum allowed size of this layout element.</p>
+<p>A manual minimum size is considered set if it is non-zero.</p>
+<p>The default implementation simply returns the sum of the horizontal margins for the width and the sum of the vertical margins for the height. Reimplementations may use their detailed knowledge about the layout element's content to provide size hints. </p>
 
-<p>Reimplemented from <a class="el" href="classQCPLayoutElement.html#ab3fdb5c9a5189bb2dac10d4d25329cd8">QCPLayoutElement</a>.</p>
+<p>Reimplemented from <a class="el" href="classQCPLayoutElement.html#a46789036c4fcb190fa374f91321d7c09">QCPLayoutElement</a>.</p>
 
 </div>
 </div>
-<a id="a3720d1b79931b2bdec3f2158a5f0181c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3720d1b79931b2bdec3f2158a5f0181c">&sect;&nbsp;</a></span>maximumSizeHint()</h2>
+<a id="ab2c2f06a1898b4de6e0237875c62f610"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c2f06a1898b4de6e0237875c62f610">&sect;&nbsp;</a></span>maximumOuterSizeHint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -843,7 +856,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QSize QCPLayoutGrid::maximumSizeHint </td>
+          <td class="memname">QSize QCPLayoutGrid::maximumOuterSizeHint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -855,10 +868,12 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the maximum size this layout element (the inner <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a>) may be expanded to.</p>
-<p>if a maximum size (<a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a>) was not set manually, parent layouts consult this function to determine the maximum allowed size of this layout element. (A manual maximum size is considered set if it is smaller than Qt's QWIDGETSIZE_MAX.) </p>
+<p>Returns the suggested maximum size this layout element (the <a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>) may be expanded to, if no manual maximum size is set.</p>
+<p>if a maximum size (<a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a>) was not set manually, parent layouts use the returned size (usually indirectly through <a class="el" href="classQCPLayout.html#add49fd6843821a6126914b837ed52e22">QCPLayout::getFinalMaximumOuterSize</a>) to determine the maximum allowed size of this layout element.</p>
+<p>A manual maximum size is considered set if it is smaller than Qt's <code>QWIDGETSIZE_MAX</code>.</p>
+<p>The default implementation simply returns <code>QWIDGETSIZE_MAX</code> for both width and height, implying no suggested maximum size. Reimplementations may use their detailed knowledge about the layout element's content to provide size hints. </p>
 
-<p>Reimplemented from <a class="el" href="classQCPLayoutElement.html#ab5ce2ba22b36d9a3b70a1be562c326e5">QCPLayoutElement</a>.</p>
+<p>Reimplemented from <a class="el" href="classQCPLayoutElement.html#ad96efb977a26e360e8a64a4c1e56456d">QCPLayoutElement</a>.</p>
 
 </div>
 </div>
@@ -1052,7 +1067,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Inserts a new column with empty cells at the column index <em>newIndex</em>. Valid values for <em>newIndex</em> range from 0 (inserts a row at the left) to <em>rowCount</em> (appends a row at the right).</p>
+<p>Inserts a new column with empty cells at the column index <em>newIndex</em>. Valid values for <em>newIndex</em> range from 0 (inserts a column at the left) to <em>columnCount</em> (appends a column at the right).</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutGrid.html#a48af3dd7c3a653d9c3d7dd99bd02e838">insertRow</a> </dd></dl>
 
 </div>
@@ -1162,7 +1177,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Places the minimum column widths and row heights into <em>minColWidths</em> and <em>minRowHeights</em> respectively.</p>
-<p>The minimum height of a row is the largest minimum height of any element in that row. The minimum width of a column is the largest minimum width of any element in that column.</p>
+<p>The minimum height of a row is the largest minimum height of any element's outer rect in that row. The minimum width of a column is the largest minimum width of any element's outer rect in that column.</p>
 <p>This is a helper function for <a class="el" href="classQCPLayoutGrid.html#a07f8dd7d3d61d7345026621d446042a4">updateLayout</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutGrid.html#a9be77011ec5b5dfbe7fbda126659e1eb">getMaximumRowColSizes</a> </dd></dl>
 
@@ -1202,7 +1217,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Places the maximum column widths and row heights into <em>maxColWidths</em> and <em>maxRowHeights</em> respectively.</p>
-<p>The maximum height of a row is the smallest maximum height of any element in that row. The maximum width of a column is the smallest maximum width of any element in that column.</p>
+<p>The maximum height of a row is the smallest maximum height of any element's outer rect in that row. The maximum width of a column is the smallest maximum width of any element's outer rect in that column.</p>
 <p>This is a helper function for <a class="el" href="classQCPLayoutGrid.html#a07f8dd7d3d61d7345026621d446042a4">updateLayout</a>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutGrid.html#a4b9a251919936f127a63fc1b9911cd4e">getMinimumRowColSizes</a> </dd></dl>
 

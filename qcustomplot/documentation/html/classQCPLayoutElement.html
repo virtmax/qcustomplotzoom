@@ -50,6 +50,8 @@ Inheritance diagram for QCPLayoutElement:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a0d83360e05735735aaf6d7983c56374d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a0d83360e05735735aaf6d7983c56374d">UpdatePhase</a> </td></tr>
 <tr class="separator:a0d83360e05735735aaf6d7983c56374d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afb3e5773529e4bd20e448f81be4d2a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a> </td></tr>
+<tr class="separator:a0afb3e5773529e4bd20e448f81be4d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Functions</h2></td></tr>
@@ -59,8 +61,7 @@ Public Functions</h2></td></tr>
 <tr class="separator:a4efdcbde9d28f410e5ef166c9d691deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a208effccfe2cca4a0eaf9393e60f2dd4"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> () const</td></tr>
 <tr class="separator:a208effccfe2cca4a0eaf9393e60f2dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a32a12a6161c9dffbadeb9cc585510c"><td class="memItemLeft" align="right" valign="top"><a id="a2a32a12a6161c9dffbadeb9cc585510c"></a>
-QRect&#160;</td><td class="memItemRight" valign="bottom"><b>outerRect</b> () const</td></tr>
+<tr class="memitem:a2a32a12a6161c9dffbadeb9cc585510c"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a> () const</td></tr>
 <tr class="separator:a2a32a12a6161c9dffbadeb9cc585510c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4ac9450aa2d60863bf3a8ea0c940c9d"><td class="memItemLeft" align="right" valign="top"><a id="af4ac9450aa2d60863bf3a8ea0c940c9d"></a>
 QMargins&#160;</td><td class="memItemRight" valign="bottom"><b>margins</b> () const</td></tr>
@@ -77,6 +78,9 @@ QSize&#160;</td><td class="memItemRight" valign="bottom"><b>minimumSize</b> () c
 <tr class="memitem:afb9503858d4aa0f3b9f1794b084fb40a"><td class="memItemLeft" align="right" valign="top"><a id="afb9503858d4aa0f3b9f1794b084fb40a"></a>
 QSize&#160;</td><td class="memItemRight" valign="bottom"><b>maximumSize</b> () const</td></tr>
 <tr class="separator:afb9503858d4aa0f3b9f1794b084fb40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66136f121ee3e1c933b748761203cab4"><td class="memItemLeft" align="right" valign="top"><a id="a66136f121ee3e1c933b748761203cab4"></a>
+<a class="el" href="classQCPLayoutElement.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sizeConstraintRect</b> () const</td></tr>
+<tr class="separator:a66136f121ee3e1c933b748761203cab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8af6bcf81e12fe1d6f44490f34522b90"><td class="memItemLeft" align="right" valign="top"><a id="a8af6bcf81e12fe1d6f44490f34522b90"></a>
 <a class="el" href="classQCPMarginGroup.html">QCPMarginGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>marginGroup</b> (<a class="el" href="namespaceQCP.html#a7e487e3e2ccb62ab7771065bab7cae54">QCP::MarginSide</a> side) const</td></tr>
 <tr class="separator:a8af6bcf81e12fe1d6f44490f34522b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,14 +103,16 @@ QHash&lt; <a class="el" href="namespaceQCP.html#a7e487e3e2ccb62ab7771065bab7cae5
 <tr class="separator:a74eb5280a737ab44833d506db65efd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e0e9c48f230217c529b0819f832d84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a03e0e9c48f230217c529b0819f832d84">setMaximumSize</a> (int width, int height)</td></tr>
 <tr class="separator:a03e0e9c48f230217c529b0819f832d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361666cdcc6fbfd37344cc44be746b0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> (<a class="el" href="classQCPLayoutElement.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a> constraintRect)</td></tr>
+<tr class="separator:a361666cdcc6fbfd37344cc44be746b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a516e56f76b6bc100e8e71d329866847d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a516e56f76b6bc100e8e71d329866847d">setMarginGroup</a> (QCP::MarginSides sides, <a class="el" href="classQCPMarginGroup.html">QCPMarginGroup</a> *group)</td></tr>
 <tr class="separator:a516e56f76b6bc100e8e71d329866847d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a929c2ec62e0e0e1d8418eaa802e2af9b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a929c2ec62e0e0e1d8418eaa802e2af9b">update</a> (<a class="el" href="classQCPLayoutElement.html#a0d83360e05735735aaf6d7983c56374d">UpdatePhase</a> phase)</td></tr>
 <tr class="separator:a929c2ec62e0e0e1d8418eaa802e2af9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3fdb5c9a5189bb2dac10d4d25329cd8"><td class="memItemLeft" align="right" valign="top">virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#ab3fdb5c9a5189bb2dac10d4d25329cd8">minimumSizeHint</a> () const</td></tr>
-<tr class="separator:ab3fdb5c9a5189bb2dac10d4d25329cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5ce2ba22b36d9a3b70a1be562c326e5"><td class="memItemLeft" align="right" valign="top">virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#ab5ce2ba22b36d9a3b70a1be562c326e5">maximumSizeHint</a> () const</td></tr>
-<tr class="separator:ab5ce2ba22b36d9a3b70a1be562c326e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46789036c4fcb190fa374f91321d7c09"><td class="memItemLeft" align="right" valign="top">virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a46789036c4fcb190fa374f91321d7c09">minimumOuterSizeHint</a> () const</td></tr>
+<tr class="separator:a46789036c4fcb190fa374f91321d7c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96efb977a26e360e8a64a4c1e56456d"><td class="memItemLeft" align="right" valign="top">virtual QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#ad96efb977a26e360e8a64a4c1e56456d">maximumOuterSizeHint</a> () const</td></tr>
+<tr class="separator:ad96efb977a26e360e8a64a4c1e56456d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76dec8cb31e498994a944d7647a43309"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="classQCPLayoutElement.html">QCPLayoutElement</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a76dec8cb31e498994a944d7647a43309">elements</a> (bool recursive) const</td></tr>
 <tr class="separator:a76dec8cb31e498994a944d7647a43309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b96ae0d7bcfa6e38188fcb1e73e143f"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPLayoutElement.html#a0b96ae0d7bcfa6e38188fcb1e73e143f">selectTest</a> (const QPointF &amp;pos, bool onlySelectable, QVariant *details=0) const</td></tr>
@@ -188,7 +194,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The abstract base class for all objects that form <a class="el" href="thelayoutsystem.html">the layout system</a>. </p>
 <p>This is an abstract base class. As such, it can't be instantiated directly, rather use one of its subclasses.</p>
-<p>A Layout element is a rectangular object which can be placed in layouts. It has an outer rect (QCPLayoutElement::outerRect) and an inner rect (<a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">QCPLayoutElement::rect</a>). The difference between outer and inner rect is called its margin. The margin can either be set to automatic or manual (<a class="el" href="classQCPLayoutElement.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a>) on a per-side basis. If a side is set to manual, that margin can be set explicitly with <a class="el" href="classQCPLayoutElement.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a> and will stay fixed at that value. If it's set to automatic, the layout element subclass will control the value itself (via <a class="el" href="classQCPLayoutElement.html#a005c9f0fe84bc1591a2cf2c46fd477b4">calculateAutoMargin</a>).</p>
+<p>A Layout element is a rectangular object which can be placed in layouts. It has an outer rect (<a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">QCPLayoutElement::outerRect</a>) and an inner rect (<a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">QCPLayoutElement::rect</a>). The difference between outer and inner rect is called its margin. The margin can either be set to automatic or manual (<a class="el" href="classQCPLayoutElement.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a>) on a per-side basis. If a side is set to manual, that margin can be set explicitly with <a class="el" href="classQCPLayoutElement.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a> and will stay fixed at that value. If it's set to automatic, the layout element subclass will control the value itself (via <a class="el" href="classQCPLayoutElement.html#a005c9f0fe84bc1591a2cf2c46fd477b4">calculateAutoMargin</a>).</p>
 <p>Layout elements can be placed in layouts (base class <a class="el" href="classQCPLayout.html" title="The abstract base class for layouts. ">QCPLayout</a>) like <a class="el" href="classQCPLayoutGrid.html" title="A layout that arranges child elements in a grid. ">QCPLayoutGrid</a>. The top level layout is reachable via <a class="el" href="classQCustomPlot.html#af1a1f1f571237deb7c2bd34a5e9f018f">QCustomPlot::plotLayout</a>, and is a <a class="el" href="classQCPLayoutGrid.html">QCPLayoutGrid</a>. Since <a class="el" href="classQCPLayout.html">QCPLayout</a> itself derives from <a class="el" href="classQCPLayoutElement.html">QCPLayoutElement</a>, layouts can be nested.</p>
 <p>Thus in <a class="el" href="classQCustomPlot.html" title="The central class of the library. This is the QWidget which displays the plot and interacts with the ...">QCustomPlot</a> one can divide layout elements into two categories: The ones that are invisible by themselves, because they don't draw anything. Their only purpose is to manage the position and size of other layout elements. This category of layout elements usually use <a class="el" href="classQCPLayout.html" title="The abstract base class for layouts. ">QCPLayout</a> as base class. Then there is the category of layout elements which actually draw something. For example, <a class="el" href="classQCPAxisRect.html" title="Holds multiple axes and arranges them in a rectangular shape. ">QCPAxisRect</a>, <a class="el" href="classQCPLegend.html" title="Manages a legend inside a QCustomPlot. ">QCPLegend</a> and <a class="el" href="classQCPTextElement.html" title="A layout element displaying a text. ">QCPTextElement</a> are of this category. This does not necessarily mean that the latter category can't have child layout elements. <a class="el" href="classQCPLegend.html" title="Manages a legend inside a QCustomPlot. ">QCPLegend</a> for instance, actually derives from <a class="el" href="classQCPLayoutGrid.html" title="A layout that arranges child elements in a grid. ">QCPLayoutGrid</a> and the individual legend items are child layout elements in the grid layout. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -210,6 +216,28 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a0d83360e05735735aaf6d7983c56374da288cb59a92280e47261a341f2813e676"></a>upMargins&#160;</td><td class="fielddoc"><p>Phase in which the margins are calculated and set. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a0d83360e05735735aaf6d7983c56374da5d1ccf5d79967c232c3c511796860045"></a>upLayout&#160;</td><td class="fielddoc"><p>Final phase in which the layout system places the rects of the elements. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0afb3e5773529e4bd20e448f81be4d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afb3e5773529e4bd20e448f81be4d2a">&sect;&nbsp;</a></span>SizeConstraintRect</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classQCPLayoutElement.html#a0afb3e5773529e4bd20e448f81be4d2a">QCPLayoutElement::SizeConstraintRect</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Defines to which rect of a layout element the size constraints that can be set via <a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a> and <a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a> apply. The outer rect (<a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>) includes the margins (e.g. in the case of a <a class="el" href="classQCPAxisRect.html" title="Holds multiple axes and arranges them in a rectangular shape. ">QCPAxisRect</a> the axis labels), whereas the inner rect (<a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a>) does not.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutElement.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0afb3e5773529e4bd20e448f81be4d2aa7fa7e25cd23758b9915c64ed9f1be26c"></a>scrInnerRect&#160;</td><td class="fielddoc"><p>Minimum/Maximum size constraints apply to inner rect. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a0afb3e5773529e4bd20e448f81be4d2aabe2745b41a6131ed194e13591b08e04d"></a>scrOuterRect&#160;</td><td class="fielddoc"><p>Minimum/Maximum size constraints apply to outer rect, thus include layout element margins. </p>
 </td></tr>
 </table>
 
@@ -292,8 +320,36 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the inner rect of this layout element. The inner rect is the outer rect (<a class="el" href="classQCPLayoutElement.html#a38975ea13e36de8e53391ce41d94bc0f">setOuterRect</a>) shrinked by the margins (<a class="el" href="classQCPLayoutElement.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a>, <a class="el" href="classQCPLayoutElement.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a>).</p>
-<p>In some cases, the area between outer and inner rect is left blank. In other cases the margin area is used to display peripheral graphics while the main content is in the inner rect. This is where automatic margin calculation becomes interesting because it allows the layout element to adapt the margins to the peripheral graphics it wants to draw. For example, <a class="el" href="classQCPAxisRect.html">QCPAxisRect</a> draws the axis labels and tick labels in the margin area, thus needs to adjust the margins (if <a class="el" href="classQCPLayoutElement.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a> is enabled) according to the space required by the labels of the axes. </p>
+<p>Returns the inner rect of this layout element. The inner rect is the outer rect (<a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>, <a class="el" href="classQCPLayoutElement.html#a38975ea13e36de8e53391ce41d94bc0f">setOuterRect</a>) shrinked by the margins (<a class="el" href="classQCPLayoutElement.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a>, <a class="el" href="classQCPLayoutElement.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a>).</p>
+<p>In some cases, the area between outer and inner rect is left blank. In other cases the margin area is used to display peripheral graphics while the main content is in the inner rect. This is where automatic margin calculation becomes interesting because it allows the layout element to adapt the margins to the peripheral graphics it wants to draw. For example, <a class="el" href="classQCPAxisRect.html">QCPAxisRect</a> draws the axis labels and tick labels in the margin area, thus needs to adjust the margins (if <a class="el" href="classQCPLayoutElement.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a> is enabled) according to the space required by the labels of the axes.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a> </dd></dl>
+
+</div>
+</div>
+<a id="a2a32a12a6161c9dffbadeb9cc585510c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a32a12a6161c9dffbadeb9cc585510c">&sect;&nbsp;</a></span>outerRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect QCPLayoutElement::outerRect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the outer rect of this layout element. The outer rect is the inner rect expanded by the margins (<a class="el" href="classQCPLayoutElement.html#a8f450b1f3f992ad576fce2c63d8b79cf">setMargins</a>, <a class="el" href="classQCPLayoutElement.html#accfda49994e3e6d51ed14504abf9d27d">setAutoMargins</a>). The outer rect is used (and set via <a class="el" href="classQCPLayoutElement.html#a38975ea13e36de8e53391ce41d94bc0f">setOuterRect</a>) by the parent <a class="el" href="classQCPLayout.html">QCPLayout</a> to control the size of this layout element.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> </dd></dl>
 
 </div>
 </div>
@@ -397,8 +453,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the minimum size for the inner <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> of this layout element. A parent layout tries to respect the <em>size</em> here by changing row/column sizes in the layout accordingly.</p>
-<p>If the parent layout size is not sufficient to satisfy all minimum size constraints of its child layout elements, the layout may set a size that is actually smaller than <em>size</em>. <a class="el" href="classQCustomPlot.html" title="The central class of the library. This is the QWidget which displays the plot and interacts with the ...">QCustomPlot</a> propagates the layout's size constraints to the outside by setting its own minimum QWidget size accordingly, so violations of <em>size</em> should be exceptions. </p>
+<p>Sets the minimum size of this layout element. A parent layout tries to respect the <em>size</em> here by changing row/column sizes in the layout accordingly.</p>
+<p>If the parent layout size is not sufficient to satisfy all minimum size constraints of its child layout elements, the layout may set a size that is actually smaller than <em>size</em>. <a class="el" href="classQCustomPlot.html" title="The central class of the library. This is the QWidget which displays the plot and interacts with the ...">QCustomPlot</a> propagates the layout's size constraints to the outside by setting its own minimum QWidget size accordingly, so violations of <em>size</em> should be exceptions.</p>
+<p>Whether this constraint applies to the inner or the outer rect can be specified with <a class="el" href="classQCPLayoutElement.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> (see <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> and <a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>). </p>
 
 </div>
 </div>
@@ -428,7 +485,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This is an overloaded function.</p>
-<p>Sets the minimum size for the inner <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> of this layout element. </p>
+<p>Sets the minimum size of this layout element.</p>
+<p>Whether this constraint applies to the inner or the outer rect can be specified with <a class="el" href="classQCPLayoutElement.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> (see <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> and <a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>). </p>
 
 </div>
 </div>
@@ -447,7 +505,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the maximum size for the inner <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> of this layout element. A parent layout tries to respect the <em>size</em> here by changing row/column sizes in the layout accordingly. </p>
+<p>Sets the maximum size of this layout element. A parent layout tries to respect the <em>size</em> here by changing row/column sizes in the layout accordingly.</p>
+<p>Whether this constraint applies to the inner or the outer rect can be specified with <a class="el" href="classQCPLayoutElement.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> (see <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> and <a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>). </p>
 
 </div>
 </div>
@@ -477,7 +536,29 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This is an overloaded function.</p>
-<p>Sets the maximum size for the inner <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> of this layout element. </p>
+<p>Sets the maximum size of this layout element.</p>
+<p>Whether this constraint applies to the inner or the outer rect can be specified with <a class="el" href="classQCPLayoutElement.html#a361666cdcc6fbfd37344cc44be746b0f">setSizeConstraintRect</a> (see <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a> and <a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>). </p>
+
+</div>
+</div>
+<a id="a361666cdcc6fbfd37344cc44be746b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a361666cdcc6fbfd37344cc44be746b0f">&sect;&nbsp;</a></span>setSizeConstraintRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QCPLayoutElement::setSizeConstraintRect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQCPLayoutElement.html#a0afb3e5773529e4bd20e448f81be4d2a">SizeConstraintRect</a>&#160;</td>
+          <td class="paramname"><em>constraintRect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets to which rect of a layout element the size constraints apply. Size constraints can be set via <a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a> and <a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a>.</p>
+<p>The outer rect (<a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>) includes the margins (e.g. in the case of a <a class="el" href="classQCPAxisRect.html" title="Holds multiple axes and arranges them in a rectangular shape. ">QCPAxisRect</a> the axis labels), whereas the inner rect (<a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a>) does not.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a>, <a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a> </dd></dl>
 
 </div>
 </div>
@@ -545,8 +626,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ab3fdb5c9a5189bb2dac10d4d25329cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3fdb5c9a5189bb2dac10d4d25329cd8">&sect;&nbsp;</a></span>minimumSizeHint()</h2>
+<a id="a46789036c4fcb190fa374f91321d7c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46789036c4fcb190fa374f91321d7c09">&sect;&nbsp;</a></span>minimumOuterSizeHint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -555,7 +636,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QSize QCPLayoutElement::minimumSizeHint </td>
+          <td class="memname">QSize QCPLayoutElement::minimumOuterSizeHint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -567,15 +648,17 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the minimum size this layout element (the inner <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a>) may be compressed to.</p>
-<p>if a minimum size (<a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a>) was not set manually, parent layouts consult this function to determine the minimum allowed size of this layout element. (A manual minimum size is considered set if it is non-zero.) </p>
+<p>Returns the suggested minimum size this layout element (the <a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>) may be compressed to, if no manual minimum size is set.</p>
+<p>if a minimum size (<a class="el" href="classQCPLayoutElement.html#a5dd29a3c8bc88440c97c06b67be7886b">setMinimumSize</a>) was not set manually, parent layouts use the returned size (usually indirectly through <a class="el" href="classQCPLayout.html#a864fddc84721f186663faf3683f1fa70">QCPLayout::getFinalMinimumOuterSize</a>) to determine the minimum allowed size of this layout element.</p>
+<p>A manual minimum size is considered set if it is non-zero.</p>
+<p>The default implementation simply returns the sum of the horizontal margins for the width and the sum of the vertical margins for the height. Reimplementations may use their detailed knowledge about the layout element's content to provide size hints. </p>
 
-<p>Reimplemented in <a class="el" href="classQCPLayoutGrid.html#a9ef4b0d626708a1ada2cfea3a5973b80">QCPLayoutGrid</a>, <a class="el" href="classQCPPlottableLegendItem.html#a3adf8154c7e61538656d80464e5695dd">QCPPlottableLegendItem</a>, and <a class="el" href="classQCPTextElement.html#ad7476a5ef2ae917a4b0f79a0fcaae1ec">QCPTextElement</a>.</p>
+<p>Reimplemented in <a class="el" href="classQCPLayoutGrid.html#a83ac366358e2576226630de21cd5b332">QCPLayoutGrid</a>, <a class="el" href="classQCPPlottableLegendItem.html#ae53e50e46c2804e867b50c1aa56ec3c1">QCPPlottableLegendItem</a>, and <a class="el" href="classQCPTextElement.html#a994c21d8f36378f742bed4b360bddb3f">QCPTextElement</a>.</p>
 
 </div>
 </div>
-<a id="ab5ce2ba22b36d9a3b70a1be562c326e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5ce2ba22b36d9a3b70a1be562c326e5">&sect;&nbsp;</a></span>maximumSizeHint()</h2>
+<a id="ad96efb977a26e360e8a64a4c1e56456d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad96efb977a26e360e8a64a4c1e56456d">&sect;&nbsp;</a></span>maximumOuterSizeHint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -584,7 +667,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QSize QCPLayoutElement::maximumSizeHint </td>
+          <td class="memname">QSize QCPLayoutElement::maximumOuterSizeHint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -596,10 +679,12 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the maximum size this layout element (the inner <a class="el" href="classQCPLayoutElement.html#a208effccfe2cca4a0eaf9393e60f2dd4">rect</a>) may be expanded to.</p>
-<p>if a maximum size (<a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a>) was not set manually, parent layouts consult this function to determine the maximum allowed size of this layout element. (A manual maximum size is considered set if it is smaller than Qt's QWIDGETSIZE_MAX.) </p>
+<p>Returns the suggested maximum size this layout element (the <a class="el" href="classQCPLayoutElement.html#a2a32a12a6161c9dffbadeb9cc585510c">outerRect</a>) may be expanded to, if no manual maximum size is set.</p>
+<p>if a maximum size (<a class="el" href="classQCPLayoutElement.html#a74eb5280a737ab44833d506db65efd95">setMaximumSize</a>) was not set manually, parent layouts use the returned size (usually indirectly through <a class="el" href="classQCPLayout.html#add49fd6843821a6126914b837ed52e22">QCPLayout::getFinalMaximumOuterSize</a>) to determine the maximum allowed size of this layout element.</p>
+<p>A manual maximum size is considered set if it is smaller than Qt's <code>QWIDGETSIZE_MAX</code>.</p>
+<p>The default implementation simply returns <code>QWIDGETSIZE_MAX</code> for both width and height, implying no suggested maximum size. Reimplementations may use their detailed knowledge about the layout element's content to provide size hints. </p>
 
-<p>Reimplemented in <a class="el" href="classQCPLayoutGrid.html#a3720d1b79931b2bdec3f2158a5f0181c">QCPLayoutGrid</a>, and <a class="el" href="classQCPTextElement.html#a21aaa8ace79d02fed22aabb0ce2ae2bf">QCPTextElement</a>.</p>
+<p>Reimplemented in <a class="el" href="classQCPLayoutGrid.html#ab2c2f06a1898b4de6e0237875c62f610">QCPLayoutGrid</a>, and <a class="el" href="classQCPTextElement.html#ae50a71b9bba189d1c31589c676a22848">QCPTextElement</a>.</p>
 
 </div>
 </div>

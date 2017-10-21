@@ -252,16 +252,18 @@ Protected Functions</h2></td></tr>
 <tr class="separator:a238116f1898c49cb8209d61707b5b367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a958a5c6a6e1e4a03556be88b6fe37e"><td class="memItemLeft" align="right" valign="top">QVector&lt; QPointF &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#a2a958a5c6a6e1e4a03556be88b6fe37e">dataToImpulseLines</a> (const QVector&lt; <a class="el" href="classQCPGraphData.html">QCPGraphData</a> &gt; &amp;<a class="el" href="classQCPGraph.html#a141aa31a1f19bbd0ce60f55eaeb9ea60">data</a>) const</td></tr>
 <tr class="separator:a2a958a5c6a6e1e4a03556be88b6fe37e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9d33e4a001e5c3c695395cd7b365448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#af9d33e4a001e5c3c695395cd7b365448">addFillBasePoints</a> (QVector&lt; QPointF &gt; *lines) const</td></tr>
-<tr class="separator:af9d33e4a001e5c3c695395cd7b365448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f433c2b9dce8e6fae31780143e85520"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#a6f433c2b9dce8e6fae31780143e85520">removeFillBasePoints</a> (QVector&lt; QPointF &gt; *lines) const</td></tr>
-<tr class="separator:a6f433c2b9dce8e6fae31780143e85520"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace7c17a07e9aa824853e469816a5aa1c"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#ace7c17a07e9aa824853e469816a5aa1c">lowerFillBasePoint</a> (double lowerKey) const</td></tr>
-<tr class="separator:ace7c17a07e9aa824853e469816a5aa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a255fc7260d96ed6f9d972839941f93"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#a7a255fc7260d96ed6f9d972839941f93">upperFillBasePoint</a> (double upperKey) const</td></tr>
-<tr class="separator:a7a255fc7260d96ed6f9d972839941f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace6fb42e60633f29b8071e40133eda50"><td class="memItemLeft" align="right" valign="top">const QPolygonF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#ace6fb42e60633f29b8071e40133eda50">getChannelFillPolygon</a> (const QVector&lt; QPointF &gt; *lines) const</td></tr>
-<tr class="separator:ace6fb42e60633f29b8071e40133eda50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0886b9ec7731d8993bbb104465f3b9"><td class="memItemLeft" align="right" valign="top">QVector&lt; <a class="el" href="classQCPDataRange.html">QCPDataRange</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#a0e0886b9ec7731d8993bbb104465f3b9">getNonNanSegments</a> (const QVector&lt; QPointF &gt; *lineData, Qt::Orientation keyOrientation) const</td></tr>
+<tr class="separator:a0e0886b9ec7731d8993bbb104465f3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334b15c43ee1855bf724daf886e8530e"><td class="memItemLeft" align="right" valign="top">QVector&lt; QPair&lt; <a class="el" href="classQCPDataRange.html">QCPDataRange</a>, <a class="el" href="classQCPDataRange.html">QCPDataRange</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#a334b15c43ee1855bf724daf886e8530e">getOverlappingSegments</a> (QVector&lt; <a class="el" href="classQCPDataRange.html">QCPDataRange</a> &gt; thisSegments, const QVector&lt; QPointF &gt; *thisData, QVector&lt; <a class="el" href="classQCPDataRange.html">QCPDataRange</a> &gt; otherSegments, const QVector&lt; QPointF &gt; *otherData) const</td></tr>
+<tr class="separator:a334b15c43ee1855bf724daf886e8530e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb9c674b207a1f6df5e083aa9f3e071a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#abb9c674b207a1f6df5e083aa9f3e071a">segmentsIntersect</a> (double aLower, double aUpper, double bLower, double bUpper, int &amp;bPrecedence) const</td></tr>
+<tr class="separator:abb9c674b207a1f6df5e083aa9f3e071a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13f2c756f3114703159c2e604783e208"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#a13f2c756f3114703159c2e604783e208">getFillBasePoint</a> (QPointF matchingDataPoint) const</td></tr>
+<tr class="separator:a13f2c756f3114703159c2e604783e208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af73d5fe97cde966785bfd67201e44391"><td class="memItemLeft" align="right" valign="top">const QPolygonF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#af73d5fe97cde966785bfd67201e44391">getFillPolygon</a> (const QVector&lt; QPointF &gt; *lineData, <a class="el" href="classQCPDataRange.html">QCPDataRange</a> segment) const</td></tr>
+<tr class="separator:af73d5fe97cde966785bfd67201e44391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a5bdd5cb695d95d3eea80cfe96c5118"><td class="memItemLeft" align="right" valign="top">const QPolygonF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#a9a5bdd5cb695d95d3eea80cfe96c5118">getChannelFillPolygon</a> (const QVector&lt; QPointF &gt; *lineData, <a class="el" href="classQCPDataRange.html">QCPDataRange</a> thisSegment, const QVector&lt; QPointF &gt; *otherData, <a class="el" href="classQCPDataRange.html">QCPDataRange</a> otherSegment) const</td></tr>
+<tr class="separator:a9a5bdd5cb695d95d3eea80cfe96c5118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c3f15dd5a06633011a6ef36016d308b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#a8c3f15dd5a06633011a6ef36016d308b">findIndexBelowX</a> (const QVector&lt; QPointF &gt; *<a class="el" href="classQCPGraph.html#a141aa31a1f19bbd0ce60f55eaeb9ea60">data</a>, double x) const</td></tr>
 <tr class="separator:a8c3f15dd5a06633011a6ef36016d308b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaabd6c6a7200a2672c44e62bd2a1cafa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQCPGraph.html#aaabd6c6a7200a2672c44e62bd2a1cafa">findIndexAboveX</a> (const QVector&lt; QPointF &gt; *<a class="el" href="classQCPGraph.html#a141aa31a1f19bbd0ce60f55eaeb9ea60">data</a>, double x) const</td></tr>
@@ -922,9 +924,9 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
 </table>
 </div><div class="memdoc">
 <p>Draws the fill of the graph using the specified <em>painter</em>, with the currently set brush.</p>
-<p><em>lines</em> contains the points of the graph line, in pixel coordinates.</p>
-<p>If the fill is a normal fill towards the zero-value-line, only the points in <em>lines</em> are required and two extra points at the zero-value-line, which are added by <a class="el" href="classQCPGraph.html#af9d33e4a001e5c3c695395cd7b365448">addFillBasePoints</a> and removed by <a class="el" href="classQCPGraph.html#a6f433c2b9dce8e6fae31780143e85520">removeFillBasePoints</a> after the fill drawing is done.</p>
-<p>On the other hand if the fill is a channel fill between this <a class="el" href="classQCPGraph.html" title="A plottable representing a graph in a plot. ">QCPGraph</a> and another <a class="el" href="classQCPGraph.html" title="A plottable representing a graph in a plot. ">QCPGraph</a> (<em>mChannelFillGraph</em>), the more complex polygon is calculated with the <a class="el" href="classQCPGraph.html#ace6fb42e60633f29b8071e40133eda50">getChannelFillPolygon</a> function, and then drawn.</p>
+<p>Depending on whether a normal fill or a channel fill (<a class="el" href="classQCPGraph.html#a2d03156df1b64037a2e36cfa50351ca3">setChannelFillGraph</a>) is needed, <a class="el" href="classQCPGraph.html#af73d5fe97cde966785bfd67201e44391">getFillPolygon</a> or <a class="el" href="classQCPGraph.html#a9a5bdd5cb695d95d3eea80cfe96c5118">getChannelFillPolygon</a> are used to find the according fill polygons.</p>
+<p>In order to handle NaN Data points correctly (the fill needs to be split into disjoint areas), this method first determines a list of non-NaN segments with <a class="el" href="classQCPGraph.html#a0e0886b9ec7731d8993bbb104465f3b9">getNonNanSegments</a>, on which to operate. In the channel fill case, <a class="el" href="classQCPGraph.html#a334b15c43ee1855bf724daf886e8530e">getOverlappingSegments</a> is used to consolidate the non-NaN segments of the two involved graphs, before passing the overlapping pairs to <a class="el" href="classQCPGraph.html#a9a5bdd5cb695d95d3eea80cfe96c5118">getChannelFillPolygon</a>.</p>
+<p>Pass the points of this graph's line as <em>lines</em>, in pixel coordinates.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPGraph.html#a4c3edacb2a11064bf2e16b322156aeda">drawLinePlot</a>, <a class="el" href="classQCPGraph.html#a217ef6bf6c5689eb1dcbe02187d2cc61">drawImpulsePlot</a>, <a class="el" href="classQCPGraph.html#abeb0bbe81026c024bf3d508d13cf5e0e">drawScatterPlot</a> </dd></dl>
 
 </div>
@@ -1406,8 +1408,8 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
 
 </div>
 </div>
-<a id="af9d33e4a001e5c3c695395cd7b365448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9d33e4a001e5c3c695395cd7b365448">&sect;&nbsp;</a></span>addFillBasePoints()</h2>
+<a id="a0e0886b9ec7731d8993bbb104465f3b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e0886b9ec7731d8993bbb104465f3b9">&sect;&nbsp;</a></span>getNonNanSegments()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1416,11 +1418,21 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void QCPGraph::addFillBasePoints </td>
+          <td class="memname">QVector&lt; <a class="el" href="classQCPDataRange.html">QCPDataRange</a> &gt; QCPGraph::getNonNanSegments </td>
           <td>(</td>
-          <td class="paramtype">QVector&lt; QPointF &gt; *&#160;</td>
-          <td class="paramname"><em>lines</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const QVector&lt; QPointF &gt; *&#160;</td>
+          <td class="paramname"><em>lineData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::Orientation&#160;</td>
+          <td class="paramname"><em>keyOrientation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1429,14 +1441,14 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The line vector generated by e.g. <a class="el" href="classQCPGraph.html#a563c6da2126300a4d9d2bdee30dad040">getLines</a> describes only the line that connects the data points. If the graph needs to be filled, two additional points need to be added at the value-zero-line in the lower and upper key positions of the graph. This function calculates these points and adds them to the end of <em>lineData</em>. Since the fill is typically drawn before the line stroke, these added points need to be removed again after the fill is done, with the removeFillBasePoints function.</p>
-<p>The expanding of <em>lines</em> by two points will not cause unnecessary memory reallocations, because the data vector generation functions (e.g. <a class="el" href="classQCPGraph.html#a563c6da2126300a4d9d2bdee30dad040">getLines</a>) reserve two extra points when they allocate memory for <em>lines</em>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPGraph.html#a6f433c2b9dce8e6fae31780143e85520">removeFillBasePoints</a>, <a class="el" href="classQCPGraph.html#ace7c17a07e9aa824853e469816a5aa1c">lowerFillBasePoint</a>, <a class="el" href="classQCPGraph.html#a7a255fc7260d96ed6f9d972839941f93">upperFillBasePoint</a> </dd></dl>
+<p>This method goes through the passed points in <em>lineData</em> and returns a list of the segments which don't contain NaN data points.</p>
+<p><em>keyOrientation</em> defines whether the <em>x</em> or <em>y</em> member of the passed QPointF is used to check for NaN. If <em>keyOrientation</em> is <code>Qt::Horizontal</code>, the <em>y</em> member is checked, if it is <code>Qt::Vertical</code>, the <em>x</em> member is checked.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPGraph.html#a334b15c43ee1855bf724daf886e8530e">getOverlappingSegments</a>, <a class="el" href="classQCPGraph.html#a67c5ea573f604efd8bf121a0b7a380d1">drawFill</a> </dd></dl>
 
 </div>
 </div>
-<a id="a6f433c2b9dce8e6fae31780143e85520"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f433c2b9dce8e6fae31780143e85520">&sect;&nbsp;</a></span>removeFillBasePoints()</h2>
+<a id="a334b15c43ee1855bf724daf886e8530e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a334b15c43ee1855bf724daf886e8530e">&sect;&nbsp;</a></span>getOverlappingSegments()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1445,11 +1457,33 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void QCPGraph::removeFillBasePoints </td>
+          <td class="memname">QVector&lt; QPair&lt; <a class="el" href="classQCPDataRange.html">QCPDataRange</a>, <a class="el" href="classQCPDataRange.html">QCPDataRange</a> &gt; &gt; QCPGraph::getOverlappingSegments </td>
           <td>(</td>
-          <td class="paramtype">QVector&lt; QPointF &gt; *&#160;</td>
-          <td class="paramname"><em>lines</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">QVector&lt; <a class="el" href="classQCPDataRange.html">QCPDataRange</a> &gt;&#160;</td>
+          <td class="paramname"><em>thisSegments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVector&lt; QPointF &gt; *&#160;</td>
+          <td class="paramname"><em>thisData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QVector&lt; <a class="el" href="classQCPDataRange.html">QCPDataRange</a> &gt;&#160;</td>
+          <td class="paramname"><em>otherSegments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVector&lt; QPointF &gt; *&#160;</td>
+          <td class="paramname"><em>otherData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1458,13 +1492,16 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>removes the two points from <em>lines</em> that were added by <a class="el" href="classQCPGraph.html#af9d33e4a001e5c3c695395cd7b365448">addFillBasePoints</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPGraph.html#af9d33e4a001e5c3c695395cd7b365448">addFillBasePoints</a>, <a class="el" href="classQCPGraph.html#ace7c17a07e9aa824853e469816a5aa1c">lowerFillBasePoint</a>, <a class="el" href="classQCPGraph.html#a7a255fc7260d96ed6f9d972839941f93">upperFillBasePoint</a> </dd></dl>
+<p>This method takes two segment lists (e.g. created by <a class="el" href="classQCPGraph.html#a0e0886b9ec7731d8993bbb104465f3b9">getNonNanSegments</a>) <em>thisSegments</em> and <em>otherSegments</em>, and their associated point data <em>thisData</em> and <em>otherData</em>.</p>
+<p>It returns all pairs of segments (the first from <em>thisSegments</em>, the second from <em>otherSegments</em>), which overlap in plot coordinates.</p>
+<p>This method is useful in the case of a channel fill between two graphs, when only those non-NaN segments which actually overlap in their key coordinate shall be considered for drawing a channel fill polygon.</p>
+<p>It is assumed that the passed segments in <em>thisSegments</em> are ordered ascending by index, and that the segments don't overlap themselves. The same is assumed for the segments in <em>otherSegments</em>. This is fulfilled when the segments are obtained via <a class="el" href="classQCPGraph.html#a0e0886b9ec7731d8993bbb104465f3b9">getNonNanSegments</a>.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPGraph.html#a0e0886b9ec7731d8993bbb104465f3b9">getNonNanSegments</a>, <a class="el" href="classQCPGraph.html#abb9c674b207a1f6df5e083aa9f3e071a">segmentsIntersect</a>, <a class="el" href="classQCPGraph.html#a67c5ea573f604efd8bf121a0b7a380d1">drawFill</a>, <a class="el" href="classQCPGraph.html#a9a5bdd5cb695d95d3eea80cfe96c5118">getChannelFillPolygon</a> </dd></dl>
 
 </div>
 </div>
-<a id="ace7c17a07e9aa824853e469816a5aa1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace7c17a07e9aa824853e469816a5aa1c">&sect;&nbsp;</a></span>lowerFillBasePoint()</h2>
+<a id="abb9c674b207a1f6df5e083aa9f3e071a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb9c674b207a1f6df5e083aa9f3e071a">&sect;&nbsp;</a></span>segmentsIntersect()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1473,11 +1510,39 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QPointF QCPGraph::lowerFillBasePoint </td>
+          <td class="memname">bool QCPGraph::segmentsIntersect </td>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>lowerKey</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>aLower</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>aUpper</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>bLower</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>bUpper</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>bPrecedence</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1486,14 +1551,15 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>called by <a class="el" href="classQCPGraph.html#af9d33e4a001e5c3c695395cd7b365448">addFillBasePoints</a> to conveniently assign the point which closes the fill polygon on the lower side of the zero-value-line parallel to the key axis. The logarithmic axis scale case is a bit special, since the zero-value-line in pixel coordinates is in positive or negative infinity. So this case is handled separately by just closing the fill polygon on the axis which lies in the direction towards the zero value.</p>
-<p><em>lowerKey</em> will be the the key (in pixels) of the returned point. Depending on whether the key axis is horizontal or vertical, <em>lowerKey</em> will end up as the x or y value of the returned point, respectively.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPGraph.html#a7a255fc7260d96ed6f9d972839941f93">upperFillBasePoint</a>, <a class="el" href="classQCPGraph.html#af9d33e4a001e5c3c695395cd7b365448">addFillBasePoints</a> </dd></dl>
+<p>Returns whether the segments defined by the coordinates (aLower, aUpper) and (bLower, bUpper) have overlap.</p>
+<p>The output parameter <em>bPrecedence</em> indicates whether the <em>b</em> segment reaches farther than the <em>a</em> segment or not. If <em>bPrecedence</em> returns 1, segment <em>b</em> reaches the farthest to higher coordinates (i.e. bUpper &gt; aUpper). If it returns -1, segment <em>a</em> reaches the farthest. Only if both segment's upper bounds are identical, 0 is returned as <em>bPrecedence</em>.</p>
+<p>It is assumed that the lower bounds always have smaller or equal values than the upper bounds.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPGraph.html#a334b15c43ee1855bf724daf886e8530e">getOverlappingSegments</a> </dd></dl>
 
 </div>
 </div>
-<a id="a7a255fc7260d96ed6f9d972839941f93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a255fc7260d96ed6f9d972839941f93">&sect;&nbsp;</a></span>upperFillBasePoint()</h2>
+<a id="a13f2c756f3114703159c2e604783e208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13f2c756f3114703159c2e604783e208">&sect;&nbsp;</a></span>getFillBasePoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1502,10 +1568,10 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QPointF QCPGraph::upperFillBasePoint </td>
+          <td class="memname">QPointF QCPGraph::getFillBasePoint </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>upperKey</em></td><td>)</td>
+          <td class="paramtype">QPointF&#160;</td>
+          <td class="paramname"><em>matchingDataPoint</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -1515,14 +1581,54 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>called by <a class="el" href="classQCPGraph.html#af9d33e4a001e5c3c695395cd7b365448">addFillBasePoints</a> to conveniently assign the point which closes the fill polygon on the upper side of the zero-value-line parallel to the key axis. The logarithmic axis scale case is a bit special, since the zero-value-line in pixel coordinates is in positive or negative infinity. So this case is handled separately by just closing the fill polygon on the axis which lies in the direction towards the zero value.</p>
-<p><em>upperKey</em> will be the the key (in pixels) of the returned point. Depending on whether the key axis is horizontal or vertical, <em>upperKey</em> will end up as the x or y value of the returned point, respectively.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPGraph.html#ace7c17a07e9aa824853e469816a5aa1c">lowerFillBasePoint</a>, <a class="el" href="classQCPGraph.html#af9d33e4a001e5c3c695395cd7b365448">addFillBasePoints</a> </dd></dl>
+<p>Returns the point which closes the fill polygon on the zero-value-line parallel to the key axis. The logarithmic axis scale case is a bit special, since the zero-value-line in pixel coordinates is in positive or negative infinity. So this case is handled separately by just closing the fill polygon on the axis which lies in the direction towards the zero value.</p>
+<p><em>matchingDataPoint</em> will provide the key (in pixels) of the returned point. Depending on whether the key axis of this graph is horizontal or vertical, <em>matchingDataPoint</em> will provide the x or y value of the returned point, respectively. </p>
 
 </div>
 </div>
-<a id="ace6fb42e60633f29b8071e40133eda50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace6fb42e60633f29b8071e40133eda50">&sect;&nbsp;</a></span>getChannelFillPolygon()</h2>
+<a id="af73d5fe97cde966785bfd67201e44391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af73d5fe97cde966785bfd67201e44391">&sect;&nbsp;</a></span>getFillPolygon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QPolygonF QCPGraph::getFillPolygon </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; QPointF &gt; *&#160;</td>
+          <td class="paramname"><em>lineData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQCPDataRange.html">QCPDataRange</a>&#160;</td>
+          <td class="paramname"><em>segment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the polygon needed for drawing normal fills between this graph and the key axis.</p>
+<p>Pass the graph's data points (in pixel coordinates) as <em>lineData</em>, and specify the <em>segment</em> which shall be used for the fill. The collection of <em>lineData</em> points described by <em>segment</em> must not contain NaN data points (see <a class="el" href="classQCPGraph.html#a0e0886b9ec7731d8993bbb104465f3b9">getNonNanSegments</a>).</p>
+<p>The returned fill polygon will be closed at the key axis (the zero-value line) for linear value axes. For logarithmic value axes the polygon will reach just beyond the corresponding axis rect side (see <a class="el" href="classQCPGraph.html#a13f2c756f3114703159c2e604783e208">getFillBasePoint</a>).</p>
+<p>For increased performance (due to implicit sharing), keep the returned QPolygonF const.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPGraph.html#a67c5ea573f604efd8bf121a0b7a380d1">drawFill</a>, <a class="el" href="classQCPGraph.html#a0e0886b9ec7731d8993bbb104465f3b9">getNonNanSegments</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9a5bdd5cb695d95d3eea80cfe96c5118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a5bdd5cb695d95d3eea80cfe96c5118">&sect;&nbsp;</a></span>getChannelFillPolygon()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1534,8 +1640,30 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
           <td class="memname">const QPolygonF QCPGraph::getChannelFillPolygon </td>
           <td>(</td>
           <td class="paramtype">const QVector&lt; QPointF &gt; *&#160;</td>
-          <td class="paramname"><em>lines</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>thisData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQCPDataRange.html">QCPDataRange</a>&#160;</td>
+          <td class="paramname"><em>thisSegment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVector&lt; QPointF &gt; *&#160;</td>
+          <td class="paramname"><em>otherData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQCPDataRange.html">QCPDataRange</a>&#160;</td>
+          <td class="paramname"><em>otherSegment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1544,8 +1672,11 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Generates the polygon needed for drawing channel fills between this graph and the graph specified in <em>mChannelFillGraph</em> (see <a class="el" href="classQCPGraph.html#a2d03156df1b64037a2e36cfa50351ca3">setChannelFillGraph</a>). The data points representing the line of this graph in pixel coordinates must be passed in <em>lines</em>, the corresponding points of the other graph are generated by calling its <a class="el" href="classQCPGraph.html#a563c6da2126300a4d9d2bdee30dad040">getLines</a> method.</p>
-<p>This method may return an empty polygon if the key ranges of the two graphs have no overlap of if they don't have the same orientation (e.g. one key axis vertical, the other horizontal). For increased performance (due to implicit sharing), it is recommended to keep the returned QPolygonF const. </p>
+<p>Returns the polygon needed for drawing (partial) channel fills between this graph and the graph specified by <a class="el" href="classQCPGraph.html#a2d03156df1b64037a2e36cfa50351ca3">setChannelFillGraph</a>.</p>
+<p>The data points of this graph are passed as pixel coordinates via <em>thisData</em>, the data of the other graph as <em>otherData</em>. The returned polygon will be calculated for the specified data segments <em>thisSegment</em> and <em>otherSegment</em>, pertaining to the respective <em>thisData</em> and <em>otherData</em>, respectively.</p>
+<p>The passed <em>thisSegment</em> and <em>otherSegment</em> should correspond to the segment pairs returned by <a class="el" href="classQCPGraph.html#a334b15c43ee1855bf724daf886e8530e">getOverlappingSegments</a>, to make sure only segments that actually have key coordinate overlap need to be processed here.</p>
+<p>For increased performance due to implicit sharing, keep the returned QPolygonF const.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPGraph.html#a67c5ea573f604efd8bf121a0b7a380d1">drawFill</a>, <a class="el" href="classQCPGraph.html#a334b15c43ee1855bf724daf886e8530e">getOverlappingSegments</a>, <a class="el" href="classQCPGraph.html#a0e0886b9ec7731d8993bbb104465f3b9">getNonNanSegments</a> </dd></dl>
 
 </div>
 </div>
@@ -1582,8 +1713,8 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Finds the highest index of <em>data</em>, whose points x value is just below <em>x</em>. Assumes x values in <em>data</em> points are ordered ascending, as is the case when plotting with horizontal key axis.</p>
-<p>Used to calculate the channel fill polygon, see <a class="el" href="classQCPGraph.html#ace6fb42e60633f29b8071e40133eda50">getChannelFillPolygon</a>. </p>
+<p>Finds the highest index of <em>data</em>, whose points x value is just below <em>x</em>. Assumes x values in <em>data</em> points are ordered ascending, as is ensured by <a class="el" href="classQCPGraph.html#a563c6da2126300a4d9d2bdee30dad040">getLines</a>/<a class="el" href="classQCPGraph.html#a9d7ba5904fdcaca413222335d4b283c3">getScatters</a> if the key axis is horizontal.</p>
+<p>Used to calculate the channel fill polygon, see <a class="el" href="classQCPGraph.html#a9a5bdd5cb695d95d3eea80cfe96c5118">getChannelFillPolygon</a>. </p>
 
 </div>
 </div>
@@ -1620,8 +1751,8 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Finds the smallest index of <em>data</em>, whose points x value is just above <em>x</em>. Assumes x values in <em>data</em> points are ordered ascending, as is the case when plotting with horizontal key axis.</p>
-<p>Used to calculate the channel fill polygon, see <a class="el" href="classQCPGraph.html#ace6fb42e60633f29b8071e40133eda50">getChannelFillPolygon</a>. </p>
+<p>Finds the smallest index of <em>data</em>, whose points x value is just above <em>x</em>. Assumes x values in <em>data</em> points are ordered ascending, as is ensured by <a class="el" href="classQCPGraph.html#a563c6da2126300a4d9d2bdee30dad040">getLines</a>/<a class="el" href="classQCPGraph.html#a9d7ba5904fdcaca413222335d4b283c3">getScatters</a> if the key axis is horizontal.</p>
+<p>Used to calculate the channel fill polygon, see <a class="el" href="classQCPGraph.html#a9a5bdd5cb695d95d3eea80cfe96c5118">getChannelFillPolygon</a>. </p>
 
 </div>
 </div>
@@ -1658,8 +1789,8 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Finds the highest index of <em>data</em>, whose points y value is just below <em>y</em>. Assumes y values in <em>data</em> points are ordered descending, as is the case when plotting with vertical key axis (since keys are ordered ascending).</p>
-<p>Used to calculate the channel fill polygon, see <a class="el" href="classQCPGraph.html#ace6fb42e60633f29b8071e40133eda50">getChannelFillPolygon</a>. </p>
+<p>Finds the highest index of <em>data</em>, whose points y value is just below <em>y</em>. Assumes y values in <em>data</em> points are ordered ascending, as is ensured by <a class="el" href="classQCPGraph.html#a563c6da2126300a4d9d2bdee30dad040">getLines</a>/<a class="el" href="classQCPGraph.html#a9d7ba5904fdcaca413222335d4b283c3">getScatters</a> if the key axis is vertical.</p>
+<p>Used to calculate the channel fill polygon, see <a class="el" href="classQCPGraph.html#a9a5bdd5cb695d95d3eea80cfe96c5118">getChannelFillPolygon</a>. </p>
 
 </div>
 </div>
@@ -1696,8 +1827,8 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Finds the smallest index of <em>data</em>, whose points y value is just above <em>y</em>. Assumes y values in <em>data</em> points are ordered descending, as is the case when plotting with vertical key axis.</p>
-<p>Used to calculate the channel fill polygon, see <a class="el" href="classQCPGraph.html#ace6fb42e60633f29b8071e40133eda50">getChannelFillPolygon</a>. </p>
+<p>Finds the smallest index of <em>data</em>, whose points y value is just above <em>y</em>. Assumes y values in <em>data</em> points are ordered ascending, as is ensured by <a class="el" href="classQCPGraph.html#a563c6da2126300a4d9d2bdee30dad040">getLines</a>/<a class="el" href="classQCPGraph.html#a9d7ba5904fdcaca413222335d4b283c3">getScatters</a> if the key axis is vertical.</p>
+<p>Used to calculate the channel fill polygon, see <a class="el" href="classQCPGraph.html#a9a5bdd5cb695d95d3eea80cfe96c5118">getChannelFillPolygon</a>. </p>
 
 </div>
 </div>

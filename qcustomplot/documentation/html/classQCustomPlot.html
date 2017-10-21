@@ -1019,6 +1019,7 @@ Protected Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section warning"><dt>Warning</dt><dd>This is still an experimental feature and its performance depends on the system that it runs on. Having multiple <a class="el" href="classQCustomPlot.html" title="The central class of the library. This is the QWidget which displays the plot and interacts with the ...">QCustomPlot</a> widgets in one application with enabled OpenGL rendering might cause context conflicts on some systems.</dd></dl>
 <p>This method allows to enable OpenGL plot rendering, for increased plotting performance of graphically demanding plots (thick lines, translucent fills, etc.).</p>
 <p>If <em>enabled</em> is set to true, <a class="el" href="classQCustomPlot.html" title="The central class of the library. This is the QWidget which displays the plot and interacts with the ...">QCustomPlot</a> will try to initialize OpenGL and, if successful, continue plotting with hardware acceleration. The parameter <em>multisampling</em> controls how many samples will be used per pixel, it essentially controls the antialiasing quality. If <em>multisampling</em> is set too high for the current graphics hardware, the maximum allowed value will be used.</p>
 <p>You can test whether switching to OpenGL rendering was successful by checking whether the according getter <em>QCustomPlot::openGl()</em> returns true. If the OpenGL initialization fails, rendering continues with the regular software rasterizer, and an according qDebug output is generated.</p>
