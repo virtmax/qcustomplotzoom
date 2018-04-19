@@ -104,15 +104,26 @@ void QCustomPlotZoom::mouseReleaseEvent(QMouseEvent * event)
         int tol = 5;
         if(abs(xp2-xp1) > tol && abs(yp2-yp1) > tol)
         {
-            auto x1 = xAxis->pixelToCoord(xp1);
-            auto x2 = xAxis->pixelToCoord(xp2);
-            auto y1 = yAxis->pixelToCoord(yp1);
-            auto y2 = yAxis->pixelToCoord(yp2);
-
             if(event->button() == Qt::LeftButton)
             {
-                xAxis->setRange(x1, x2);
-                yAxis->setRange(y1, y2);
+                for(int j = 0; j < axisRectCount(); j++)
+                {
+                    for(int i = 0; i < axisRect(j)->axisCount(QCPAxis::atBottom); i++)
+                    {
+                        auto myAxis = axisRect(j)->axis(QCPAxis::atBottom, i);
+                        auto x1 = myAxis->pixelToCoord(xp1);
+                        auto x2 = myAxis->pixelToCoord(xp2);
+                        myAxis->setRange(x1, x2);
+                    }
+
+                    for(int i = 0; i < axisRect(j)->axisCount(QCPAxis::atLeft); i++)
+                    {
+                        auto myAxis = axisRect(j)->axis(QCPAxis::atLeft, i);
+                        auto y1 = myAxis->pixelToCoord(yp1);
+                        auto y2 = myAxis->pixelToCoord(yp2);
+                        myAxis->setRange(y1, y2);
+                    }
+                }
             }
             else if(event->button() == Qt::RightButton)
             {
