@@ -362,8 +362,10 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the scale type of the color scale, i.e. whether values are linearly associated with colors or logarithmically.</p>
+<p>Sets the scale type of the color scale, i.e. whether values are associated with colors linearly or logarithmically.</p>
 <p>It is equivalent to calling <a class="el" href="classQCPColorMap.html#a9d20aa08e3c1f20f22908c45b9c06511">QCPColorMap::setDataScaleType</a> on any of the connected color maps. It is also equivalent to directly accessing the <a class="el" href="classQCPColorScale.html#a39bdbdb3b212602a5a57f9f3ea444190">axis</a> and setting its scale type with <a class="el" href="classQCPAxis.html#adef29cae617af4f519f6c40d1a866ca6">QCPAxis::setScaleType</a>.</p>
+<p>Note that this method controls the coordinate transformation. For logarithmic scales, you will likely also want to use a logarithmic tick spacing and labeling, which can be achieved by setting the color scale's <a class="el" href="classQCPColorScale.html#a39bdbdb3b212602a5a57f9f3ea444190">axis</a> ticker to an instance of <a class="el" href="classQCPAxisTickerLog.html">QCPAxisTickerLog</a> :</p>
+<div class="fragment"><div class="line">  colorScale-&gt;<a class="code" href="classQCPColorScale.html#aeb6107d67dd7325145b2498abae67fc3">setDataScaleType</a>(<a class="code" href="classQCPAxis.html#a36d8e8658dbaa179bf2aeb973db2d6f0abf5b785ad976618816dc6f79b73216d4">QCPAxis::stLogarithmic</a>);</div><div class="line">  colorScale-&gt;<a class="code" href="classQCPColorScale.html#a39bdbdb3b212602a5a57f9f3ea444190">axis</a>()-&gt;<a class="code" href="classQCPAxis.html#a4ee03fcd2c74d05cd1a419b9af5cfbdc">setTicker</a>(QSharedPointer&lt;QCPAxisTickerLog&gt;(<span class="keyword">new</span> <a class="code" href="classQCPAxisTickerLog.html">QCPAxisTickerLog</a>));</div></div><!-- fragment --><p> See the documentation of <a class="el" href="classQCPAxisTickerLog.html">QCPAxisTickerLog</a> about the details of logarithmic axis tick creation.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPColorScale.html#abe88633003a26d1e756aa74984587fef">setDataRange</a>, <a class="el" href="classQCPColorScale.html#a1f29583bb6f1e7f473b62fb712be3940">setGradient</a> </dd></dl>
 
 </div>

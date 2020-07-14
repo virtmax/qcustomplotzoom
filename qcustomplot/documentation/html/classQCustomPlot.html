@@ -1847,7 +1847,9 @@ If you are using a Qt version before 5.0, you must also add the module "opengl" 
 </div><div class="memdoc">
 <p>Returns the axis rect with <em>index</em>.</p>
 <p>Initially, only one axis rect (with index 0) exists in the plot. If multiple axis rects were added, all of them may be accessed with this function in a linear fashion (even when they are nested in a layout hierarchy or inside other axis rects via <a class="el" href="classQCPAxisRect.html#a949f803466619924c7018df4b511ae10">QCPAxisRect::insetLayout</a>).</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCustomPlot.html#a8f85940aaac50efb466287d9d2d04ec6">axisRectCount</a>, <a class="el" href="classQCustomPlot.html#a12af771429e2d7e313c8c5d5fca068fe">axisRects</a> </dd></dl>
+<p>The order of the axis rects is given by the fill order of the <a class="el" href="classQCPLayout.html">QCPLayout</a> that is holding them. For example, if the axis rects are in the top level grid layout (accessible via <a class="el" href="classQCustomPlot.html#af1a1f1f571237deb7c2bd34a5e9f018f">QCustomPlot::plotLayout</a>), they are ordered from left to right, top to bottom, if the layout's default <a class="el" href="classQCPLayoutGrid.html#affc2f3cfd22f28698c5b29b960d2a391">setFillOrder</a> of <a class="el" href="classQCPLayoutGrid.html#a7d49ee08773de6b2fd246edfed353ccaac4cb4b796ec4822d5894b47b51627fb3">foColumnsFirst</a> wasn't changed.</p>
+<p>If you want to access axis rects by their row and column index, use the layout interface. For example, use <a class="el" href="classQCPLayoutGrid.html#a602b426609b4411cf6a93c3ddf3a381a">QCPLayoutGrid::element</a> of the top level grid layout, and <code>qobject_cast</code> the returned layout element to <a class="el" href="classQCPAxisRect.html">QCPAxisRect</a>. (See also <a class="el" href="thelayoutsystem.html">The Layout System</a>.)</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCustomPlot.html#a8f85940aaac50efb466287d9d2d04ec6">axisRectCount</a>, <a class="el" href="classQCustomPlot.html#a12af771429e2d7e313c8c5d5fca068fe">axisRects</a>, <a class="el" href="classQCPLayoutGrid.html#affc2f3cfd22f28698c5b29b960d2a391">QCPLayoutGrid::setFillOrder</a> </dd></dl>
 
 </div>
 </div>
@@ -1866,7 +1868,8 @@ If you are using a Qt version before 5.0, you must also add the module "opengl" 
       </table>
 </div><div class="memdoc">
 <p>Returns all axis rects in the plot.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCustomPlot.html#a8f85940aaac50efb466287d9d2d04ec6">axisRectCount</a>, <a class="el" href="classQCustomPlot.html#ae5eefcb5f6ca26689b1fd4f6e25b42f9">axisRect</a> </dd></dl>
+<p>The order of the axis rects is given by the fill order of the <a class="el" href="classQCPLayout.html">QCPLayout</a> that is holding them. For example, if the axis rects are in the top level grid layout (accessible via <a class="el" href="classQCustomPlot.html#af1a1f1f571237deb7c2bd34a5e9f018f">QCustomPlot::plotLayout</a>), they are ordered from left to right, top to bottom, if the layout's default <a class="el" href="classQCPLayoutGrid.html#affc2f3cfd22f28698c5b29b960d2a391">setFillOrder</a> of <a class="el" href="classQCPLayoutGrid.html#a7d49ee08773de6b2fd246edfed353ccaac4cb4b796ec4822d5894b47b51627fb3">foColumnsFirst</a> wasn't changed.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCustomPlot.html#a8f85940aaac50efb466287d9d2d04ec6">axisRectCount</a>, <a class="el" href="classQCustomPlot.html#ae5eefcb5f6ca26689b1fd4f6e25b42f9">axisRect</a>, <a class="el" href="classQCPLayoutGrid.html#affc2f3cfd22f28698c5b29b960d2a391">QCPLayoutGrid::setFillOrder</a> </dd></dl>
 
 </div>
 </div>

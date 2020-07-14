@@ -724,8 +724,9 @@ A scatter plot of 100,000 points without and with adaptive sampling</div></div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Implements a point-selection algorithm assuming the data (accessed via the 1D data interface) is point-like. Most subclasses will want to reimplement this method again, to provide a more accurate hit test based on the true data visualization geometry.</p>
-<p>For general information about this virtual method, see the base class implementation. </p>
+<p>Implements a selectTest specific to this plottable's point geometry.</p>
+<p>If <em>details</em> is not 0, it will be set to a <a class="el" href="classQCPDataSelection.html">QCPDataSelection</a>, describing the closest data point to <em>pos</em>.</p>
+<p>For general information about this virtual method, see the base class implementation. <a class="el" href="classQCPAbstractPlottable.html#a38efe9641d972992a3d44204bc80ec1d">QCPAbstractPlottable::selectTest</a> </p>
 
 <p>Reimplemented from <a class="el" href="classQCPAbstractPlottable1D.html#a071e2df66ba1746067dfcb5e27947b43">QCPAbstractPlottable1D&lt; QCPGraphData &gt;</a>.</p>
 

@@ -1,5 +1,5 @@
 # qcustomplotzoom
-A derived class from QCustomPlot (http://qcustomplot.com/) for a easy to use plot zoom function.
+A derived class from QCustomPlot (http://qcustomplot.com/) for an easy to use plot zoom function.
 
 
 ### Functionality: 
