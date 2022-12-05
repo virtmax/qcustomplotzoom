@@ -9,6 +9,9 @@ A derived class from QCustomPlot (http://qcustomplot.com/) for an easy to use pl
 - Hold right mouse key to select a zoom region. 
 - Click middle mouse key to rescale the plot.
 
+###### Keys
+
+- L: Switch between logarithmic and linear scaling
 
 ###### Error bars
 - Enable error bars for a graph with ->setErrorBars(graphNr);

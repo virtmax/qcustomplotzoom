@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta name="author" content="Emanuel Eichhammer" />
-<meta name="copyright" content="(C) 2011-2021 Emanuel Eichhammer" />
+<meta name="copyright" content="(C) 2011-2022 Emanuel Eichhammer" />
 <title>QCPDataContainer&lt; DataType &gt; Class Template Reference</title>
 <link href="qcp.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -843,6 +843,7 @@ template&lt;class DataType &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns the range encompassed by the value coordinates of the data points in the specified key range (<em>inKeyRange</em>), using the full <em>DataType::valueRange</em> reported by the data points. The output parameter <em>foundRange</em> indicates whether a sensible range was found. If this is false, you should not use the returned <a class="el" href="classQCPRange.html" title="Represents the range an axis is encompassing. ">QCPRange</a> (e.g. the data container is empty or all points have the same value).</p>
+<p>Inf and -Inf data values are ignored.</p>
 <p>If <em>inKeyRange</em> has both lower and upper bound set to zero (is equal to <code><a class="el" href="classQCPRange.html" title="Represents the range an axis is encompassing. ">QCPRange()</a></code>), all data points are considered, without any restriction on the keys.</p>
 <p>Use <em>signDomain</em> to control which sign of the value coordinates should be considered. This is relevant e.g. for logarithmic plots which can mathematically only display one sign domain at a time.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQCPDataContainer.html#aba6e1a93c21ccc56a432b4a02c9d0ed2">keyRange</a> </dd></dl>
